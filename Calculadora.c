@@ -2,6 +2,7 @@
 
 //Prototipos
 int suma(int num1, int num2);
+int resta(int num1, int num2);
 
 int main(){
     int num1, num2;
@@ -15,9 +16,15 @@ int main(){
     
     //funciones
     res = suma(num1, num2);
-    printf("Resultado suma: %i", res);
+    printf("Resultado suma: %i\n", res);
+    res = resta(num1, num2);
+    printf("Resultado resta: %i\n", res);
 }
 
 int suma(int num1, int num2){
     return num1 + num2;
+}
+
+int resta(int num1, int num2){
+    return num1 - num2;
 }
