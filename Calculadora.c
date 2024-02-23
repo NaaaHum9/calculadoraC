@@ -3,6 +3,8 @@
 //Prototipos
 int suma(int num1, int num2);
 int resta(int num1, int num2);
+int multi(int num1, int num2);
+int div(int num1, int num2);
 
 int main(){
     int num1, num2;
@@ -19,6 +21,11 @@ int main(){
     printf("Resultado suma: %i\n", res);
     res = resta(num1, num2);
     printf("Resultado resta: %i\n", res);
+    res = multi(num1, num2);
+    printf("Resultado multiplicacion: %i\n", res);
+    res = div(num1, num2);
+    printf("Resultado division: %i\n", res);
+    
 }
 
 int suma(int num1, int num2){
@@ -27,4 +34,12 @@ int suma(int num1, int num2){
 
 int resta(int num1, int num2){
     return num1 - num2;
+}
+
+int multi(int num1, int num2){
+	return num1 * num2;
+}
+
+int div(int num1, int num2){
+	return num1/num2;
 }
